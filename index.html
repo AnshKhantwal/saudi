@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Best Software Development Company in Dubai. We build AI-powered, high-performance mobile applications tailored for Dubai's fast-evolving business ecosystem. 1000+ apps, 800+ clients, 95% retention.">
+<meta name="keywords" content="software development company Dubai, mobile app development Dubai, AI software Dubai, custom software Dubai, ERP CRM development UAE">
+<meta name="robots" content="index, follow">
+<title>Best Software Development Company in Dubai | DevCraft</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"DevCraft Dubai","description":"AI-powered software development company in Dubai with 10+ years of experience","address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"800"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">DevCraft Dubai</div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#cases">Work</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-nav" id="mobileNav">
+  <button class="mob-close" id="mobClose">✕</button>
+  <a href="#services" onclick="closeNav()">Services</a>
+  <a href="#cases" onclick="closeNav()">Work</a>
+  <a href="#industries" onclick="closeNav()">Industries</a>
+  <a href="#process" onclick="closeNav()">Process</a>
+  <a href="#faq" onclick="closeNav()">FAQ</a>
+  <a href="#contact" onclick="closeNav()" style="color:var(--gold)">Get Started →</a>
+</div>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Award-Winning Software Partner · Dubai, UAE</div>
+    <h1 class="hero-h1">Software Development<br>Company in <span class="accent">Dubai, UAE</span></h1>
+    <p class="hero-desc">DevCraft builds scalable, AI-powered custom software that drives real business results — trusted by 800+ clients across the UAE and beyond.</p>
+    <ul class="hero-bullets">
+      <li><div class="hb-icon">🚀</div>Smart Software for Startups, SMBs &amp; Enterprises</li>
+      <li><div class="hb-icon">📱</div>Cross-Platform Mobile &amp; Web Development</li>
+      <li><div class="hb-icon">🛡️</div>UAE-Compliant, Secure &amp; Scalable Architecture</li>
+    </ul>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Start Your Project <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <span class="hero-sep"></span>
+      <a href="tel:+971000000000" class="hero-book">
+        <div class="hero-book-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        Free Discovery Call
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item">
+        <div class="hero-trust-num">1000+</div>
+        <div class="hero-trust-label">Apps Built</div>
+      </div>
+      <div class="hero-trust-div"></div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-num">800+</div>
+        <div class="hero-trust-label">Clients Globally</div>
+      </div>
+      <div class="hero-trust-div"></div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-num">95%</div>
+        <div class="hero-trust-label">Retention Rate</div>
+      </div>
+      <div class="hero-trust-div"></div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-num">10+</div>
+        <div class="hero-trust-label">Years Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-form-wrap">
+    <div class="hero-form-card">
+      <div class="hf-badge">Free Consultation</div>
+      <div class="hf-title">Let's Discuss<br>Your <span>Project</span></div>
+      <div class="hf-sub">Get a tailored quote within 24 hours — no commitment required.</div>
+      <div class="hf-row">
+        <div class="hf-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Smith">
+        </div>
+        <div class="hf-group">
+          <label>Company</label>
+          <input type="text" placeholder="Your Company">
+        </div>
+      </div>
+      <div class="hf-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@company.com">
+      </div>
+      <div class="hf-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+971 50 000 0000">
+      </div>
+      <div class="hf-group">
+        <label>Service Required</label>
+        <select>
+          <option value="" disabled selected>Select a service…</option>
+          <option>Custom Software Development</option>
+          <option>Mobile App Development</option>
+          <option>CRM / ERP Solutions</option>
+          <option>SaaS Platform</option>
+          <option>AI Integration</option>
+          <option>Legacy Modernization</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="hf-group">
+        <label>Project Brief</label>
+        <textarea placeholder="Tell us about your project goals and timeline…"></textarea>
+      </div>
+      <button class="hf-submit" onclick="handleHeroForm(this)">Get My Free Quote →</button>
+      <div class="hf-guarantee">
+        <div class="hf-guarantee-item"><span>🔒</span> Confidential</div>
+        <div class="hf-gd">·</div>
+        <div class="hf-guarantee-item"><span>⚡</span> 24hr Response</div>
+        <div class="hf-gd">·</div>
+        <div class="hf-guarantee-item"><span>✓</span> No Spam</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" role="region" aria-label="Key statistics">
+  <div class="trust-item">
+    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+    <div><div class="trust-num"><span class="counter" data-target="1000">0</span>+</div><div class="trust-label">Apps Developed</div></div>
+  </div>
+  <div class="trust-div"></div>
+  <div class="trust-item">
+    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+    <div><div class="trust-num"><span class="counter" data-target="10">0</span>+</div><div class="trust-label">Years Experience</div></div>
+  </div>
+  <div class="trust-div"></div>
+  <div class="trust-item">
+    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+    <div><div class="trust-num"><span class="counter" data-target="800">0</span>+</div><div class="trust-label">Customers Served</div></div>
+  </div>
+  <div class="trust-div"></div>
+  <div class="trust-item">
+    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+    <div><div class="trust-num"><span class="counter" data-target="95">0</span>%</div><div class="trust-label">Retention Rate</div></div>
+  </div>
+</div>
+
+<!-- CLIENT LOGOS -->
+<div class="clients-strip">
+  <div class="clients-label">Trusted by Industry Leaders Across the UAE &amp; Beyond</div>
+  <div class="clients-row">
+    <div class="client-badge">Emirates Group</div>
+    <div class="client-badge">DEWA</div>
+    <div class="client-badge">Emaar Properties</div>
+    <div class="client-badge">Zayed University</div>
+    <div class="client-badge">Dubai Health Authority</div>
+    <div class="client-badge">Majid Al Futtaim</div>
+    <div class="client-badge">Noon</div>
+    <div class="client-badge">Damac</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-strip" id="about" aria-label="About">
+  <div class="about-inner">
+    <div>
+      <div class="sec-label reveal">Our Expertise</div>
+      <h2 class="sec-h2 reveal d1">Built for Dubai's<br>Digital-First Businesses</h2>
+      <p class="sec-sub reveal d2">With over 10 years of industry experience, we have developed 1000+ applications tailored to diverse business needs — trusted by 800+ clients globally with a 95% retention rate.</p>
+      <div class="about-feats reveal d3">
+        <div class="af">
+          <div class="af-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><div class="af-t">Scalable Architecture</div><div class="af-d">Cloud-ready applications ensuring flexibility, reliability, and seamless scalability for long-term growth.</div></div>
+        </div>
+        <div class="af">
+          <div class="af-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <div><div class="af-t">AI-Powered Features</div><div class="af-d">Smarter automation and data-driven decision-making built into every solution we deliver.</div></div>
+        </div>
+        <div class="af">
+          <div class="af-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><div class="af-t">Secure &amp; Compliant</div><div class="af-d">Solutions built to protect data and meet UAE regulatory and global compliance standards.</div></div>
+        </div>
+        <div class="af">
+          <div class="af-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="af-t">API-First Development</div><div class="af-d">Smooth integrations and real-time connectivity across all your business systems.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-ring-col reveal d3">
+      <div class="ring-wrap">
+        <div class="ring-outer"></div>
+        <div class="ring-mid"></div>
+        <div class="ring-inner"></div>
+        <div class="ring-center">
+          <div class="ring-center-num">10+</div>
+          <div class="ring-center-label">Years of<br>Excellence</div>
+        </div>
+        <div class="ring-stat"><div class="ring-stat-num">1000+</div><div class="ring-stat-label">Apps Delivered</div></div>
+        <div class="ring-stat"><div class="ring-stat-num">95%</div><div class="ring-stat-label">Retention</div></div>
+        <div class="ring-stat"><div class="ring-stat-num">800+</div><div class="ring-stat-label">Clients</div></div>
+      </div>
+    </div>
+
+    <div class="reveal d2">
+      <div class="award-card">
+        <div class="award-badge">🏆</div>
+        <div><div class="award-t">Hemant Paliwal — CEO &amp; Co-Founder</div><div class="award-s">Visionary Tech Leader · Dubai Digital Innovation Award</div></div>
+        <div class="award-yr">2024</div>
+      </div>
+      <div class="award-card">
+        <div class="award-badge">⭐</div>
+        <div><div class="award-t">Rohit Kumar — CTO &amp; Lead Architect</div><div class="award-s">Best Mobile Architecture Design · UAE Tech Summit</div></div>
+        <div class="award-yr">2024</div>
+      </div>
+      <div class="award-card">
+        <div class="award-badge">🥇</div>
+        <div><div class="award-t">Top Software Company — MENA Region</div><div class="award-s">Clutch Global Leaders · GoodFirms Top Developer</div></div>
+        <div class="award-yr">2023</div>
+      </div>
+      <div class="award-card">
+        <div class="award-badge">💎</div>
+        <div><div class="award-t">ISO 27001 Certified</div><div class="award-s">Information Security Management Excellence</div></div>
+        <div class="award-yr">2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item">Custom Software Development <span class="mdot"></span></div>
+    <div class="marquee-item">AI-Powered Applications <span class="mdot"></span></div>
+    <div class="marquee-item">Mobile App Development <span class="mdot"></span></div>
+    <div class="marquee-item">ERP &amp; CRM Solutions <span class="mdot"></span></div>
+    <div class="marquee-item">SaaS Platforms <span class="mdot"></span></div>
+    <div class="marquee-item">Legacy Modernization <span class="mdot"></span></div>
+    <div class="marquee-item">Cloud-Native Development <span class="mdot"></span></div>
+    <div class="marquee-item">API Integration <span class="mdot"></span></div>
+    <div class="marquee-item">Custom Software Development <span class="mdot"></span></div>
+    <div class="marquee-item">AI-Powered Applications <span class="mdot"></span></div>
+    <div class="marquee-item">Mobile App Development <span class="mdot"></span></div>
+    <div class="marquee-item">ERP &amp; CRM Solutions <span class="mdot"></span></div>
+    <div class="marquee-item">SaaS Platforms <span class="mdot"></span></div>
+    <div class="marquee-item">Legacy Modernization <span class="mdot"></span></div>
+    <div class="marquee-item">Cloud-Native Development <span class="mdot"></span></div>
+    <div class="marquee-item">API Integration <span class="mdot"></span></div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="services-section" id="services" aria-label="Services">
+  <div class="svc-header">
+    <div>
+      <div class="sec-label reveal">What We Build</div>
+      <h2 class="sec-h2 reveal d1">Boutique Custom Software<br>Development Services</h2>
+    </div>
+    <p class="sec-sub reveal d2" style="max-width:360px;">Tailored, scalable solutions powered by cutting-edge technologies for seamless performance and long-term growth.</p>
+  </div>
+  <div class="svc-grid reveal">
+    <div class="sc">
+      <div class="sc-num">01</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+      <div class="sc-t">Custom Software Development</div>
+      <p class="sc-d">Enterprise-grade software tailored to your workflows to improve efficiency and automate business-critical processes.</p>
+      <ul class="sc-feats"><li>Tailored workflow solutions</li><li>Scalable architecture</li><li>Process automation</li><li>Agile delivery</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">02</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="sc-t">CRM Software Development</div>
+      <p class="sc-d">Custom CRM to manage customer data, streamline sales pipelines, and improve retention with real-time insights.</p>
+      <ul class="sc-feats"><li>Centralized data management</li><li>Automated lead tracking</li><li>Real-time analytics</li><li>Improved conversions</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">03</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="sc-t">ERP Software Development</div>
+      <p class="sc-d">Powerful ERP systems integrating finance, HR, inventory, and operations into a unified, intelligent platform.</p>
+      <ul class="sc-feats"><li>Unified process integration</li><li>Real-time operational visibility</li><li>Automated HR &amp; finance</li><li>Supply chain optimization</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">04</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+      <div class="sc-t">SaaS Application Development</div>
+      <p class="sc-d">Scalable SaaS platforms with multi-tenant architecture and secure cloud deployment built for growth.</p>
+      <ul class="sc-feats"><li>Multi-tenant architecture</li><li>Subscription billing</li><li>Secure cloud deployment</li><li>Continuous feature rollout</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">05</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div class="sc-t">API Development &amp; Integration</div>
+      <p class="sc-d">Robust APIs and third-party integrations for seamless system communication and enhanced functionality.</p>
+      <ul class="sc-feats"><li>Scalable API architecture</li><li>Third-party integrations</li><li>Real-time data sync</li><li>Fast feature expansion</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">06</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+      <div class="sc-t">Legacy Software Modernization</div>
+      <p class="sc-d">Upgrade outdated systems to modern technologies with minimal disruption to your business operations.</p>
+      <ul class="sc-feats"><li>Modern tech stack upgrade</li><li>Enhanced security</li><li>Minimal disruption</li><li>Extended system ROI</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">07</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <div class="sc-t">Cloud-Native Development</div>
+      <p class="sc-d">Cloud-native applications offering flexibility, scalability, and cost efficiency with high availability.</p>
+      <ul class="sc-feats"><li>Cloud-native apps</li><li>Cost-efficient infra</li><li>Secure data storage</li><li>Seamless deployment</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+    <div class="sc">
+      <div class="sc-num">08</div>
+      <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <div class="sc-t">Maintenance &amp; Support</div>
+      <p class="sc-d">Continuous monitoring, updates, bug fixes, and performance optimization for long-term stability.</p>
+      <ul class="sc-feats"><li>24/7 system monitoring</li><li>Regular updates</li><li>Quick bug resolution</li><li>Long-term support</li></ul>
+      <div class="sc-arrow">Explore service →</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="whyus" aria-label="Why choose us">
+  <div class="why-inner">
+    <div>
+      <div class="sec-label reveal">Why Partner With Us</div>
+      <h2 class="sec-h2 reveal d1">Dubai's Premier Digital<br>Engineering Partner</h2>
+      <p class="sec-sub reveal d2" style="margin-bottom:2rem;">We create scalable, secure, and high-performance software tailored to Dubai's fast-growing digital ecosystem, helping businesses innovate, adapt, and lead with confidence.</p>
+      <a href="#contact" class="btn-primary reveal d3">Schedule Expert Consultation <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+    <div class="why-feats reveal d2">
+      <div class="wc">
+        <div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="wc-t">UAE-Focused Teams</div>
+        <div class="wc-d">Deep experience with UAE business environments, regulatory frameworks, and local market dynamics.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="wc-t">Compliance Ready</div>
+        <div class="wc-d">Solutions built for scalability, resilience, and compliance readiness from day one.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="wc-t">End-to-End Ownership</div>
+        <div class="wc-d">Full ownership from strategy and development to post-launch optimization and ongoing support.</div>
+      </div>
+      <div class="wc">
+        <div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div class="wc-t">Legacy Upgrade Proven</div>
+        <div class="wc-d">Proven capability in upgrading legacy systems without operational disruption or data loss.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="cases-section" id="cases" aria-label="Case studies">
+  <div class="sec-label reveal">Success Stories</div>
+  <h2 class="sec-h2 reveal d1">Software Solutions<br>Making Real Impact in UAE</h2>
+  <p class="sec-sub reveal d2">Forward-thinking businesses across the UAE leveraged our engineering expertise to build scalable, AI-driven products.</p>
+  <div class="cases-grid">
+    <div class="cc reveal d1">
+      <div class="cc-visual cv1"><div class="cc-pat"></div><div class="cc-icon">🏠</div></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">AI</span><span class="cc-tag">Real Estate</span><span class="cc-tag">Android</span></div>
+        <h3 class="cc-title">Verento: AI Property Inspection Platform</h3>
+        <p class="cc-desc">An AI-enabled property inspection solution leveraging image recognition and real-time reporting to streamline verification and reduce disputes.</p>
+        <div class="cc-meta">
+          <div class="cc-mi"><span>10K+</span>Downloads</div>
+          <div class="cc-mi"><span>UAE</span>Market</div>
+          <div class="cc-mi"><span>Android</span>Platform</div>
+        </div>
+      </div>
+    </div>
+    <div class="cc reveal d2">
+      <div class="cc-visual cv2"><div class="cc-pat"></div><div class="cc-icon">🎓</div></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">EdTech</span><span class="cc-tag">AI</span><span class="cc-tag">iOS &amp; Android</span></div>
+        <h3 class="cc-title">Zayed University: Smart Education Ecosystem</h3>
+        <p class="cc-desc">A robust AI-powered education platform integrating real-time collaboration, performance analytics, and scalable infrastructure for modern academics.</p>
+        <div class="cc-meta">
+          <div class="cc-mi"><span>5K+</span>Downloads</div>
+          <div class="cc-mi"><span>UAE</span>Market</div>
+          <div class="cc-mi"><span>iOS &amp; Android</span>Platform</div>
+        </div>
+      </div>
+    </div>
+    <div class="cc reveal d3">
+      <div class="cc-visual cv3"><div class="cc-pat"></div><div class="cc-icon">📚</div></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">EdTech</span><span class="cc-tag">Adaptive AI</span><span class="cc-tag">iOS &amp; Android</span></div>
+        <h3 class="cc-title">SORISE: Intelligent EdTech Platform</h3>
+        <p class="cc-desc">Advanced AI-powered learning platform delivering personalized education through adaptive models, automated assessments, and data-driven insights.</p>
+        <div class="cc-meta">
+          <div class="cc-mi"><span>10K+</span>Downloads</div>
+          <div class="cc-mi"><span>UAE</span>Market</div>
+          <div class="cc-mi"><span>iOS &amp; Android</span>Platform</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+<section class="industries-section" id="industries" aria-label="Industries">
+  <div class="ind-header">
+    <div>
+      <div class="sec-label reveal">Industries We Serve</div>
+      <h2 class="sec-h2 reveal d1">Industry-Focused Software<br>Development in Dubai</h2>
+    </div>
+    <p class="sec-sub reveal d2" style="max-width:360px;">Delivering solutions tailored to diverse business sectors — enabling innovation and sustainable digital growth.</p>
+  </div>
+  <div class="ind-grid">
+    <div class="ic reveal d1">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">🏥</div><div class="ic-name">Healthcare</div></div>
+      <div class="ic-desc">HIPAA-ready digital health solutions modernising patient care across UAE facilities.</div>
+      <ul class="ic-items">
+        <li>Telemedicine &amp; virtual consultations</li>
+        <li>Secure patient data management</li>
+        <li>AI-driven diagnostics &amp; analytics</li>
+        <li>Hospital management systems</li>
+      </ul>
+      <div class="ic-count">4 Solutions Available</div>
+    </div>
+    <div class="ic reveal d2">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">💳</div><div class="ic-name">Fintech &amp; Banking</div></div>
+      <div class="ic-desc">Secure, scalable financial technology built for CBUAE compliance and digital banking.</div>
+      <ul class="ic-items">
+        <li>Secure digital payment solutions</li>
+        <li>Fraud detection &amp; risk management</li>
+        <li>Real-time transaction processing</li>
+        <li>Blockchain-based financial systems</li>
+      </ul>
+      <div class="ic-count">5 Solutions Available</div>
+    </div>
+    <div class="ic reveal d3">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">🏗️</div><div class="ic-name">Real Estate</div></div>
+      <div class="ic-desc">End-to-end proptech platforms powering Dubai's booming property market.</div>
+      <ul class="ic-items">
+        <li>Property listing &amp; search platforms</li>
+        <li>Virtual tours &amp; AR-based viewing</li>
+        <li>CRM for property management</li>
+        <li>Secure transaction systems</li>
+      </ul>
+      <div class="ic-count">4 Solutions Available</div>
+    </div>
+    <div class="ic reveal d4">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">🛒</div><div class="ic-name">eCommerce &amp; Retail</div></div>
+      <div class="ic-desc">High-performance commerce platforms built for UAE's competitive retail landscape.</div>
+      <ul class="ic-items">
+        <li>Scalable online marketplace</li>
+        <li>AI-based product recommendations</li>
+        <li>Secure payment gateway integration</li>
+        <li>Inventory &amp; order management</li>
+      </ul>
+      <div class="ic-count">6 Solutions Available</div>
+    </div>
+    <div class="ic reveal d1">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">🚚</div><div class="ic-name">Logistics &amp; Transport</div></div>
+      <div class="ic-desc">Smart logistics platforms driving efficiency across UAE's world-class supply chains.</div>
+      <ul class="ic-items">
+        <li>Real-time fleet tracking</li>
+        <li>Route optimization &amp; analytics</li>
+        <li>Warehouse &amp; inventory management</li>
+        <li>Automated delivery &amp; dispatch</li>
+      </ul>
+      <div class="ic-count">4 Solutions Available</div>
+    </div>
+    <div class="ic reveal d2">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">📖</div><div class="ic-name">Education &amp; eLearning</div></div>
+      <div class="ic-desc">Adaptive learning ecosystems transforming education delivery in the UAE and MENA.</div>
+      <ul class="ic-items">
+        <li>Interactive learning platforms</li>
+        <li>AI-based personalized learning</li>
+        <li>Virtual classrooms &amp; live sessions</li>
+        <li>Performance tracking &amp; analytics</li>
+      </ul>
+      <div class="ic-count">5 Solutions Available</div>
+    </div>
+    <div class="ic reveal d3">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">✈️</div><div class="ic-name">Travel &amp; Hospitality</div></div>
+      <div class="ic-desc">Intelligent travel platforms elevating guest experiences across the region.</div>
+      <ul class="ic-items">
+        <li>Online booking &amp; reservation systems</li>
+        <li>Personalized travel recommendations</li>
+        <li>Customer experience management</li>
+        <li>Integrated loyalty programs</li>
+      </ul>
+      <div class="ic-count">4 Solutions Available</div>
+    </div>
+    <div class="ic reveal d4">
+      <div class="ic-glow"></div>
+      <div class="ic-top"><div class="ic-em">⚡</div><div class="ic-name">On-Demand Services</div></div>
+      <div class="ic-desc">Real-time service apps with seamless UX built for Dubai's fast-moving on-demand economy.</div>
+      <ul class="ic-items">
+        <li>Real-time service booking</li>
+        <li>GPS tracking &amp; live updates</li>
+        <li>Secure in-app payments</li>
+        <li>Rating &amp; user management</li>
+      </ul>
+      <div class="ic-count">3 Solutions Available</div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="tech-section" id="technologies" aria-label="Technology Stack">
+  <div class="sec-label reveal">Our Stack</div>
+  <h2 class="sec-h2 reveal d1">Latest Technologies Our<br>Developers Use</h2>
+  <p class="sec-sub reveal d2">We leverage a powerful, modern tech stack to deliver scalable, high-performance software tailored to your needs.</p>
+  <div class="tech-tabs reveal d3" id="techTabs">
+    <button class="tech-tab active" onclick="switchTech('frontend',this)">Frontend</button>
+    <button class="tech-tab" onclick="switchTech('backend',this)">Backend</button>
+    <button class="tech-tab" onclick="switchTech('mobile',this)">Mobile</button>
+    <button class="tech-tab" onclick="switchTech('database',this)">Database</button>
+    <button class="tech-tab" onclick="switchTech('devops',this)">DevOps</button>
+    <button class="tech-tab" onclick="switchTech('ai',this)">AI &amp; ML</button>
+  </div>
+  <div id="techContent" class="reveal d4">
+    <div class="tech-grid" id="techGrid"></div>
+  </div>
+</section>
+
+<!-- ===== COST CALCULATOR — Smooth ===== -->
+<section class="calc-section" id="calculator" aria-label="Cost Calculator">
+  <div class="calc-inner">
+    <div class="sec-label reveal">Estimate Your Project</div>
+    <h2 class="sec-h2 reveal d1">Calculate Your Software<br>Development Cost</h2>
+    <p class="sec-sub reveal d2">Answer 4 quick questions to get a ballpark budget estimate for your project.</p>
+    <div class="calc-card reveal d3">
+      <div class="calc-header">
+        <div class="calc-header-left">
+          <div class="calc-header-title">Project Cost Estimator</div>
+          <div class="calc-header-sub">Takes less than 60 seconds · Free &amp; no commitment</div>
+        </div>
+        <!-- Step indicator -->
+        <div class="calc-steps-bar" id="calcStepsBar">
+          <div class="csb-step active" id="csb1">
+            <div class="csb-dot">1<span class="csb-label">Stage</span></div>
+          </div>
+          <div class="csb-line"></div>
+          <div class="csb-step" id="csb2">
+            <div class="csb-dot">2<span class="csb-label">Timeline</span></div>
+          </div>
+          <div class="csb-line"></div>
+          <div class="csb-step" id="csb3">
+            <div class="csb-dot">3<span class="csb-label">Type</span></div>
+          </div>
+          <div class="csb-line"></div>
+          <div class="csb-step" id="csb4">
+            <div class="csb-dot">4<span class="csb-label">Features</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="calc-body">
+        <div class="calc-panels">
+          <div class="calc-step active" id="step1">
+            <div class="calc-q">What stage is your project at?</div>
+            <div class="calc-q-sub">This helps us understand how much discovery and planning work is needed.</div>
+            <div class="calc-opts">
+              <div class="co" onclick="selectOpt(this,'stage','idea')">
+                <div class="co-check">✓</div>
+                <div class="co-em">💡</div><div class="co-t">Idea Stage</div><div class="co-d">Just getting started with a concept</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'stage','prototype')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🔧</div><div class="co-t">Prototype</div><div class="co-d">Have wireframes or a basic design</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'stage','mvp')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🚀</div><div class="co-t">MVP / Scale</div><div class="co-d">Existing product needing improvement</div>
+              </div>
+            </div>
+            <div class="calc-nav">
+              <div style="font-size:.75rem;color:var(--mt)">Step 1 of 4</div>
+              <button class="btn-primary" onclick="nextStep(2)">Continue <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+            </div>
+          </div>
+
+          <div class="calc-step" id="step2">
+            <div class="calc-q">What's your expected timeline?</div>
+            <div class="calc-q-sub">Tighter timelines may affect resourcing and investment required.</div>
+            <div class="calc-opts">
+              <div class="co" onclick="selectOpt(this,'timeline','short')">
+                <div class="co-check">✓</div>
+                <div class="co-em">⚡</div><div class="co-t">1–3 Months</div><div class="co-d">Fast delivery — urgent need</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'timeline','medium')">
+                <div class="co-check">✓</div>
+                <div class="co-em">📅</div><div class="co-t">3–6 Months</div><div class="co-d">Standard delivery pace</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'timeline','long')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🏗️</div><div class="co-t">6+ Months</div><div class="co-d">Complex enterprise project</div>
+              </div>
+            </div>
+            <div class="calc-nav">
+              <button class="btn-secondary" onclick="nextStep(1)">← Back</button>
+              <div style="display:flex;align-items:center;gap:1rem">
+                <span style="font-size:.75rem;color:var(--mt)">Step 2 of 4</span>
+                <button class="btn-primary" onclick="nextStep(3)">Continue <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-step" id="step3">
+            <div class="calc-q">What type of solution do you need?</div>
+            <div class="calc-q-sub">This determines the platforms and technologies we'll leverage.</div>
+            <div class="calc-opts">
+              <div class="co" onclick="selectOpt(this,'type','mobile')">
+                <div class="co-check">✓</div>
+                <div class="co-em">📱</div><div class="co-t">Mobile App</div><div class="co-d">iOS, Android, or cross-platform</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'type','web')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🌐</div><div class="co-t">Web Platform</div><div class="co-d">SaaS, ERP, or CRM system</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'type','both')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🔗</div><div class="co-t">Both</div><div class="co-d">Complete digital ecosystem</div>
+              </div>
+            </div>
+            <div class="calc-nav">
+              <button class="btn-secondary" onclick="nextStep(2)">← Back</button>
+              <div style="display:flex;align-items:center;gap:1rem">
+                <span style="font-size:.75rem;color:var(--mt)">Step 3 of 4</span>
+                <button class="btn-primary" onclick="nextStep(4)">Continue <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-step" id="step4">
+            <div class="calc-q">What feature complexity do you need?</div>
+            <div class="calc-q-sub">Be honest — more features means more value and investment.</div>
+            <div class="calc-opts">
+              <div class="co" onclick="selectOpt(this,'features','basic')">
+                <div class="co-check">✓</div>
+                <div class="co-em">✅</div><div class="co-t">Standard</div><div class="co-d">Core features, clean UI</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'features','advanced')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🤖</div><div class="co-t">Advanced + AI</div><div class="co-d">AI, analytics, 3rd-party APIs</div>
+              </div>
+              <div class="co" onclick="selectOpt(this,'features','enterprise')">
+                <div class="co-check">✓</div>
+                <div class="co-em">🏢</div><div class="co-t">Enterprise</div><div class="co-d">Full suite, integrations, compliance</div>
+              </div>
+            </div>
+            <div class="calc-nav">
+              <button class="btn-secondary" onclick="nextStep(3)">← Back</button>
+              <div style="display:flex;align-items:center;gap:1rem">
+                <span style="font-size:.75rem;color:var(--mt)">Step 4 of 4</span>
+                <button class="btn-primary" onclick="showResult()">Show My Estimate 🎯</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-step" id="stepResult">
+            <div class="calc-result">
+              <div class="cr-label">Your Estimated Investment</div>
+              <div class="cr-summary" id="calcSummary"></div>
+              <div class="cr-range-wrap">
+                <div class="cr-range" id="calcResultRange">$15,000 – $45,000</div>
+                <div class="cr-note" id="calcResultNote">Based on your project details, this is your estimated starting range.</div>
+              </div>
+              <p style="font-size:.8rem;color:var(--mt);line-height:1.7;margin-bottom:1.5rem">This is a rough estimate. Get an accurate, no-obligation quote from our Dubai team — usually within 24 hours.</p>
+              <div class="cr-acts">
+                <a href="#contact" class="btn-primary">Get Exact Quote <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+                <button class="btn-secondary" onclick="resetCalc()">Recalculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGAGEMENT MODELS -->
+<section class="engagement-section" id="engagement" aria-label="Engagement Models">
+  <div class="sec-label reveal">How We Work With You</div>
+  <h2 class="sec-h2 reveal d1">Flexible Engagement<br>Models</h2>
+  <p class="sec-sub reveal d2">Choose the model that aligns with your project goals, timeline, and budget. We adapt to you.</p>
+  <div class="eng-grid">
+    <div class="ec reveal d1">
+      <div class="ec-icon">🎯</div>
+      <div class="ec-t">Dedicated Team</div>
+      <div class="ec-d">A full-time team exclusively focused on your project, offering deep collaboration and continuous delivery from start to finish.</div>
+      <div class="ec-meta">
+        <div class="em-row"><span class="em-k">Cost</span><span class="em-v">Zero hidden costs</span></div>
+        <div class="em-row"><span class="em-k">Availability</span><span class="em-v">160 hrs/month</span></div>
+        <div class="em-row"><span class="em-k">Duration</span><span class="em-v">Monthly billing</span></div>
+        <div class="em-row"><span class="em-k">Ideal For</span><span class="em-v">Long-term products</span></div>
+      </div>
+    </div>
+    <div class="ec reveal d2">
+      <div class="ec-icon">⏱️</div>
+      <div class="ec-t">Part-Time Specialist</div>
+      <div class="ec-d">Expert developers join your team part-time — great for MVPs, feature additions, or QA reinforcement without full-team commitment.</div>
+      <div class="ec-meta">
+        <div class="em-row"><span class="em-k">Accessibility</span><span class="em-v">5–6 hrs/day</span></div>
+        <div class="em-row"><span class="em-k">Minimum</span><span class="em-v">30 days</span></div>
+        <div class="em-row"><span class="em-k">Billing</span><span class="em-v">Monthly</span></div>
+        <div class="em-row"><span class="em-k">Ideal For</span><span class="em-v">MVPs, feature sprints</span></div>
+      </div>
+    </div>
+    <div class="ec reveal d3">
+      <div class="ec-icon">🕐</div>
+      <div class="ec-t">Hourly Basis</div>
+      <div class="ec-d">Pay only for the time you use. Perfect for urgent fixes, tech advisory, or quick code reviews — no long-term commitment required.</div>
+      <div class="ec-meta">
+        <div class="em-row"><span class="em-k">Accessibility</span><span class="em-v">Custom hours</span></div>
+        <div class="em-row"><span class="em-k">Minimum</span><span class="em-v">55 hrs</span></div>
+        <div class="em-row"><span class="em-k">Billing</span><span class="em-v">Per hour</span></div>
+        <div class="em-row"><span class="em-k">Ideal For</span><span class="em-v">Urgent fixes, advice</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW WE WORK — Enhanced ===== -->
+<section class="process-section" id="process" aria-label="Development process">
+  <div class="process-inner">
+    <div class="sec-label reveal">How We Work</div>
+    <h2 class="sec-h2 reveal d1">Our Development Process<br>for Dubai Businesses</h2>
+    <p class="sec-sub reveal d2" style="margin-bottom:0">A structured, technology-driven approach aligned with UAE compliance standards and enterprise requirements — from first call to launch and beyond.</p>
+    <div class="process-grid reveal d3">
+      <div class="ps-card">
+        <div class="ps-top">
+          <div class="ps-num">01</div>
+          <div>
+            <div class="ps-t">Strategic Discovery</div>
+            <div class="ps-duration">Week 1–2</div>
+          </div>
+        </div>
+        <p class="ps-d">Market intelligence and UAE-focused user behavior analysis. Competitive landscape assessment, feature engineering, product validation, and technical roadmap planning aligned to your business goals.</p>
+        <div class="ps-tags"><span class="ps-tag">Market Research</span><span class="ps-tag">UAE Compliance</span><span class="ps-tag">Feasibility Analysis</span></div>
+      </div>
+      <div class="ps-card">
+        <div class="ps-top">
+          <div class="ps-num">02</div>
+          <div>
+            <div class="ps-t">UI/UX Design & Prototyping</div>
+            <div class="ps-duration">Week 2–4</div>
+          </div>
+        </div>
+        <p class="ps-d">High-fidelity wireframing, interactive prototyping, and human-centered design with responsive adaptive UI frameworks. Iterative usability testing ensures every screen feels intuitive.</p>
+        <div class="ps-tags"><span class="ps-tag">Wireframing</span><span class="ps-tag">Localization-Ready</span><span class="ps-tag">Usability Testing</span></div>
+      </div>
+      <div class="ps-card">
+        <div class="ps-top">
+          <div class="ps-num">03</div>
+          <div>
+            <div class="ps-t">Architecture & Development</div>
+            <div class="ps-duration">Ongoing Sprints</div>
+          </div>
+        </div>
+        <p class="ps-d">Microservices-based scalable architecture, RESTful APIs, third-party integrations, and cross-platform native app development. Transparent weekly sprint reviews keep you in the loop.</p>
+        <div class="ps-tags"><span class="ps-tag">Microservices</span><span class="ps-tag">Cross-Platform</span><span class="ps-tag">API Integration</span></div>
+      </div>
+      <div class="ps-card">
+        <div class="ps-top">
+          <div class="ps-num">04</div>
+          <div>
+            <div class="ps-t">Quality Engineering</div>
+            <div class="ps-duration">Parallel Track</div>
+          </div>
+        </div>
+        <p class="ps-d">Automated and manual functional testing, security testing aligned with UAE compliance, cross-device compatibility validation, and performance stress testing before every release.</p>
+        <div class="ps-tags"><span class="ps-tag">Automated QA</span><span class="ps-tag">Security Testing</span><span class="ps-tag">Performance Testing</span></div>
+      </div>
+      <div class="ps-card">
+        <div class="ps-top">
+          <div class="ps-num">05</div>
+          <div>
+            <div class="ps-t">Launch & Deployment</div>
+            <div class="ps-duration">Final Phase</div>
+          </div>
+        </div>
+        <p class="ps-d">CI/CD pipeline implementation, App Store and Google Play deployment, cloud infrastructure provisioning, and regulatory compliance validation for UAE laws — done right the first time.</p>
+        <div class="ps-tags"><span class="ps-tag">CI/CD Pipeline</span><span class="ps-tag">App Store Deploy</span><span class="ps-tag">UAE Regulatory</span></div>
+      </div>
+      <div class="ps-card">
+        <div class="ps-top">
+          <div class="ps-num">06</div>
+          <div>
+            <div class="ps-t">Lifecycle & Optimization</div>
+            <div class="ps-duration">Ongoing Support</div>
+          </div>
+        </div>
+        <p class="ps-d">Continuous integration, real-time monitoring, security patching, SLA-driven maintenance, scalability optimization, and performance tuning — we stay with you long after launch.</p>
+        <div class="ps-tags"><span class="ps-tag">24/7 Monitoring</span><span class="ps-tag">SLA Support</span><span class="ps-tag">Scalability Tuning</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi-section" id="testimonials" aria-label="Client Testimonials">
+  <div class="sec-label reveal">Client Stories</div>
+  <h2 class="sec-h2 reveal d1">What Our Clients Say</h2>
+  <p class="sec-sub reveal d2">Real words from real businesses we've helped build, scale, and succeed across the UAE.</p>
+  <div class="testi-grid">
+    <div class="tc reveal d1">
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-text">"DevCraft Dubai delivered our real estate inspection platform on time and beyond expectations. Their AI integration and attention to UAE compliance standards were outstanding."</div>
+      <div class="tc-author"><div class="tc-avatar">O</div><div><div class="tc-name">Omar Al-Rashid</div><div class="tc-role">CEO, Verento Properties</div></div></div>
+    </div>
+    <div class="tc reveal d2">
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-text">"The team's expertise in building our EdTech platform was impressive. They understood our academic requirements and delivered a truly intelligent learning ecosystem."</div>
+      <div class="tc-author"><div class="tc-avatar">S</div><div><div class="tc-name">Sarah Al-Mansoori</div><div class="tc-role">Director of Technology, Zayed University</div></div></div>
+    </div>
+    <div class="tc reveal d3">
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-text">"Working with DevCraft was a game-changer for our logistics operations. Their ERP solution gave us real-time visibility across our entire supply chain from day one."</div>
+      <div class="tc-author"><div class="tc-avatar">M</div><div><div class="tc-name">Mohammed Al-Farouq</div><div class="tc-role">Operations Head, Dubai Logistics Co.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq" aria-label="FAQ">
+  <div class="faq-inner">
+    <div>
+      <div class="sec-label reveal">Got Questions?</div>
+      <h2 class="sec-h2 reveal d1">Frequently Asked<br>Questions</h2>
+      <p class="sec-sub reveal d2">Everything you need to know about working with Dubai's leading software development company.</p>
+      <div class="faq-cats reveal d3">
+        <button class="fc active" onclick="filterFAQ('all',this)">All</button>
+        <button class="fc" onclick="filterFAQ('cost',this)">Cost &amp; Timeline</button>
+        <button class="fc" onclick="filterFAQ('legal',this)">Legal</button>
+        <button class="fc" onclick="filterFAQ('tech',this)">Technology</button>
+      </div>
+    </div>
+    <div class="faq-list reveal d2" id="faqList">
+      <div class="fi" data-cat="cost"><button class="fq" onclick="toggleFAQ(this)">What is the cost of software development in Dubai?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">The cost varies based on features, complexity, and integrations, typically ranging from $10,000 to $150,000+. Enterprise applications require higher investment for scalability, security, and advanced AI functionality.</div></div></div>
+      <div class="fi" data-cat="cost"><button class="fq" onclick="toggleFAQ(this)">How long does it take to build a mobile app?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">Development timelines usually range from 3 to 9 months, depending on app complexity, feature set, integrations, and testing cycles. We provide detailed milestones with full transparency throughout.</div></div></div>
+      <div class="fi" data-cat="cost"><button class="fq" onclick="toggleFAQ(this)">What engagement models do you offer?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">We offer flexible models including fixed price, hourly, and dedicated teams, allowing businesses to scale resources, maintain transparency, and align development with project goals and timelines.</div></div></div>
+      <div class="fi" data-cat="legal"><button class="fq" onclick="toggleFAQ(this)">Will my app comply with UAE data protection laws?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">Yes, all applications are developed in full compliance with UAE data protection regulations, including GDPR equivalents and industry standards, ensuring robust security and regulatory adherence.</div></div></div>
+      <div class="fi" data-cat="legal"><button class="fq" onclick="toggleFAQ(this)">Who owns the intellectual property rights?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">You retain complete ownership of the application, including source code and all intellectual property rights, ensuring full control and future scalability without restrictions after project completion.</div></div></div>
+      <div class="fi" data-cat="tech"><button class="fq" onclick="toggleFAQ(this)">Do you offer AI-powered app development?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">Yes, we integrate advanced AI technologies including machine learning, chatbots, automation, and predictive analytics to build intelligent applications that enhance user experience and decision-making.</div></div></div>
+      <div class="fi" data-cat="tech"><button class="fq" onclick="toggleFAQ(this)">How do you track project progress?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">We provide real-time updates through advanced project management tools, regular sprint reviews, milestone tracking, and detailed reports, ensuring complete transparency throughout the entire development lifecycle.</div></div></div>
+      <div class="fi" data-cat="tech"><button class="fq" onclick="toggleFAQ(this)">Do you provide post-launch support?<span class="fchev">▾</span></button><div class="fa"><div class="fa-inner">Yes, we provide comprehensive post-launch support including continuous monitoring, updates, bug fixes, security enhancements, and performance optimization to ensure long-term stability and success.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA + MINI FORM ===== -->
+<section class="cta-section" id="contact" aria-label="Contact">
+  <div class="cta-inner">
+    <div class="cta-left">
+      <div class="cta-eyebrow reveal">Let's Build Together</div>
+      <h2 class="cta-h2 reveal d1">Ready to Build Your<br><span style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Next Digital Product?</span></h2>
+      <p class="cta-desc reveal d2">Schedule a free consultation with our Dubai-based engineering team. We'll analyze your requirements and propose a tailored solution within 24 hours.</p>
+      <div class="cta-acts reveal d3">
+        <a href="tel:+971000000000" class="btn-primary">📞 Call Us Now</a>
+        <a href="mailto:hello@devcraft.ae" class="btn-secondary">Send a Message</a>
+      </div>
+      <div class="cta-badges reveal d4">
+        <div class="cta-badge">Free initial consultation</div>
+        <div class="cta-badge">Response within 24 hours</div>
+        <div class="cta-badge">No long-term commitment</div>
+        <div class="cta-badge">NDA available on request</div>
+      </div>
+    </div>
+
+    <!-- Mini contact form -->
+    <div class="cta-form-card reveal d2">
+      <div class="cta-form-title">Get Your Free Quote</div>
+      <div class="cta-form-sub">Fill in your details — hear from us within <span>24 hours</span></div>
+      <div class="cf-row">
+        <div class="cf-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Smith">
+        </div>
+        <div class="cf-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@company.com">
+        </div>
+      </div>
+      <div class="cf-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+971 50 000 0000">
+      </div>
+      <div class="cf-group">
+        <label>I'm interested in…</label>
+        <select>
+          <option value="" disabled selected>Select a service…</option>
+          <option>Custom Software Development</option>
+          <option>Mobile App Development</option>
+          <option>CRM / ERP Solutions</option>
+          <option>SaaS Platform</option>
+          <option>AI Integration</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="cf-group">
+        <label>Estimated Budget</label>
+        <select>
+          <option value="" disabled selected>Select a range…</option>
+          <option>Under $10,000</option>
+          <option>$10,000 – $30,000</option>
+          <option>$30,000 – $75,000</option>
+          <option>$75,000 – $150,000</option>
+          <option>$150,000+</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <button class="cf-submit" onclick="handleCtaForm(this)">Request My Free Consultation →</button>
+      <div class="cf-privacy">🔒 Your information is 100% confidential. No spam, ever.</div>
+    </div>
+  </div>
+</section>
+
+<footer aria-label="Site footer">
+  <div class="ft">
+    <div>
+      <div class="nav-logo" style="font-size:1.6rem">DevCraft Dubai</div>
+      <p class="fb-desc">Dubai's trusted AI-powered software development company. 10+ years delivering scalable, secure, high-performance applications for businesses across the UAE and beyond.</p>
+      <div class="f-contact">
+        <div>📍 Dubai, United Arab Emirates</div>
+        <div style="margin-top:6px">📧 <a href="mailto:hello@devcraft.ae">hello@devcraft.ae</a></div>
+        <div style="margin-top:6px">📞 <a href="tel:+971000000000">+971 000 000 000</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="fc-title">Services</div>
+      <ul class="fl"><li><a href="#services">Custom Software</a></li><li><a href="#services">CRM Development</a></li><li><a href="#services">ERP Solutions</a></li><li><a href="#services">SaaS Development</a></li><li><a href="#services">API Integration</a></li><li><a href="#services">Cloud Development</a></li></ul>
+    </div>
+    <div>
+      <div class="fc-title">Industries</div>
+      <ul class="fl"><li><a href="#industries">Healthcare</a></li><li><a href="#industries">Fintech</a></li><li><a href="#industries">Real Estate</a></li><li><a href="#industries">eCommerce</a></li><li><a href="#industries">Logistics</a></li><li><a href="#industries">Education</a></li></ul>
+    </div>
+    <div>
+      <div class="fc-title">Company</div>
+      <ul class="fl"><li><a href="#about">About Us</a></li><li><a href="#cases">Case Studies</a></li><li><a href="#process">Our Process</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+  </div>
+  <div class="fb">
+    <div class="fb-copy">© 2025 DevCraft Dubai. All rights reserved. | Best Software Development Company in Dubai</div>
+    <div class="fb-badges"><span class="fb-badge">ISO Certified</span><span class="fb-badge">GDPR Compliant</span><span class="fb-badge">UAE Registered</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
